@@ -24,13 +24,11 @@ It just shows the final result in the screen.
 
 Please install 'webpack-dev-server' as a dev dependency.
 
-Also, please install 'html-webpack-plugin' as a dev dependency. This is needed because actual bundling does not occur. So, to check with HTML files, we need make instant HTML file that will be on the dev server.
-
-If you are not familiar with plugins, please check plugin folder.
-
 ## Example
 
 ### Settings
+
+Please install 'html-webpack-plugin' as a dev dependency. This is needed because actual bundling does not occur. So, to check whether it works, we need make an instant HTML file using a template HTML file. And the instant HTML file will be on the server.
 
 |the configuration file|
 
@@ -57,6 +55,23 @@ module.exports = {
 };
 ```
 
+|source/template.html|
+
+```html
+<body>
+  <div>template</div>
+  <div id="root"></div>
+</body>
+```
+
+|source/index.js|
+
+```js
+const $root = document.querySelector('#root');
+
+$root.textContent = 'dev server';
+```
+
 ### Running Command
 
 'serve' should be added.
@@ -64,3 +79,5 @@ module.exports = {
 ```sh
 $ npx webpack serve
 ```
+
+If you run the code, the server address will be shown. Please go to the address.
