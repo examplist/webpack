@@ -24,7 +24,7 @@ node-modules
 
 There is no order here. These are just in alphabetical order.
 
-extension, multiple bundling
+extension, multiple bundling, resolve
 
 ### Using Additional Tools
 
