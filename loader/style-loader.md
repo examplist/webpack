@@ -1,10 +1,18 @@
+## ! Caution
+
+You need to know 'css-loader' first.
+
 ## Use
 
-These will process CSS files.
+This makes css codes imported by 'css-loader' be applied to DOM.
+
+! These will not make a new CSS file. The contents will be in the JS file.
 
 ## Installation
 
-Please install 'style-loader' and 'css-loader' as dev dependencies
+Please install 'style-loader' as a dev dependency.
+
+! 'css-loader' should be installed as well.
 
 ## Example
 
@@ -46,7 +54,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        // Be careful that the order of elements in 'use' array should not change.
+        // Because css-loader should be used first,
+        // the order should be like this.
         use: ['style-loader', 'css-loader'],
       },
     ],
@@ -59,5 +68,7 @@ module.exports = {
 |public/bundle.js|
 
 ```js
-// Because it is too long, please check it through the HTML file.
+// Because it is so long, let me skip this part.
 ```
+
+Unlike when only 'css-loader' exists, the style will be applied to the DOM.

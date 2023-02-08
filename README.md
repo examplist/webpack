@@ -8,7 +8,7 @@ This repository will cover how to use webpack.
 
 Please check 'Basic' part first.
 
-'md' extension is omitted.
+If there is no extension, 'md' extension is omitted.
 
 ### Basic
 
@@ -24,14 +24,14 @@ node-modules
 
 There is no order here. These are just in alphabetical order.
 
-extension, multiple bundling, resolve
+extension, multiple bundling, resolve (folder)
 
 ### Using Additional Tools
 
 There is no order here. These are just in alphabetical order.
 
-loader folder, plugin folder
+loader (folder), plugin (folder)
 
 ### Dev Server
 
-devserver
+devserver-basic > devserver-advanced

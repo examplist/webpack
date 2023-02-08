@@ -6,6 +6,8 @@ homepage > DOCUMENTATION > Plugins
 
 Literally, they are plug-ins.
 
+Many of them create not only JS files, but also HTML files or CSS files.
+
 ## Kinds
 
 Let me introduce each plug-in using other files in this folder.

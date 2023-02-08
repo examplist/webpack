@@ -22,13 +22,15 @@ It just shows the final result in the screen.
 
 ## Installation
 
-Please install 'webpack-dev-server' as a dev dependency.
+Please install these as dev dependencies.
+
+- webpack-dev-server
+
+- html-webpack-plugin: This is needed because actual bundling does not occur. So, to check whether it works, we need make an instant HTML file using a template HTML file. And the instant HTML file will be on the server.
 
 ## Example
 
 ### Settings
-
-Please install 'html-webpack-plugin' as a dev dependency. This is needed because actual bundling does not occur. So, to check whether it works, we need make an instant HTML file using a template HTML file. And the instant HTML file will be on the server.
 
 |the configuration file|
 
